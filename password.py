@@ -5,5 +5,9 @@ while i <= 3:
 		print('登入成功!')
 		break
 	else:
-		print('密碼錯誤，還有', 3-i, '次機會')
+		if 3-i >0:
+			print('密碼錯誤!還有', 3-i, '次機會')
+		else:
+			print('密碼錯誤!')
+			break
 	i = i+1		
